@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 436798}
   - 33: {fileID: 3355558}
-  - 64: {fileID: 6409858}
   - 23: {fileID: 2354434}
+  - 61: {fileID: 6136866}
   m_Layer: 0
   m_Name: Goal1
   m_TagString: Untagged
@@ -42,8 +42,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 445398}
   - 33: {fileID: 3352524}
-  - 64: {fileID: 6494094}
   - 23: {fileID: 2316094}
+  - 61: {fileID: 6160926}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Untagged
@@ -75,8 +75,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 443760}
   - 33: {fileID: 3339816}
-  - 64: {fileID: 6446194}
   - 23: {fileID: 2352244}
+  - 61: {fileID: 6111782}
   m_Layer: 0
   m_Name: Wall3
   m_TagString: Untagged
@@ -93,8 +93,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 443562}
   - 33: {fileID: 3368676}
-  - 64: {fileID: 6464100}
   - 23: {fileID: 2382474}
+  - 61: {fileID: 6135352}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Untagged
@@ -126,8 +126,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 471244}
   - 33: {fileID: 3317650}
-  - 64: {fileID: 6484728}
   - 23: {fileID: 2305526}
+  - 61: {fileID: 6145934}
   m_Layer: 0
   m_Name: Goal2
   m_TagString: Untagged
@@ -403,66 +403,76 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163844}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6409858
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6446194
-MeshCollider:
+--- !u!61 &6111782
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154790}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0000000018626451}
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6464100
-MeshCollider:
+  m_Size: {x: 0.9999999, y: 0.9999999}
+--- !u!61 &6135352
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163844}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6484728
-MeshCollider:
+  m_Size: {x: 0.9999998, y: 0.9999999}
+--- !u!61 &6136866
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!61 &6145934
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174486}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6494094
-MeshCollider:
+  m_Size: {x: 1, y: 1}
+--- !u!61 &6160926
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135876}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
