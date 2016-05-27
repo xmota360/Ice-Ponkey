@@ -8,7 +8,7 @@ public class UpDown : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		currentPos = new Vector3 (0,0,0);
+		currentPos = transform.position;
 	}
 
 	// Update is called once per frame
