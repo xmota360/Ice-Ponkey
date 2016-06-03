@@ -20,8 +20,8 @@ public class BallScript : MonoBehaviour {
 		NE = GameObject.Find ("Northeast").transform.position;
 		SW = GameObject.Find ("Southeast").transform.position;
 		Vector2 newVector = new Vector2(Random.Range(randommin, randommax), Random.Range(randommin ,randommax));
-		randomgen.x = Random.Range (NW.x, NE.x);
-		randomgen.y = Random.Range (SW.y, SE.y);
+		randomgen.x = Random.Range (SW.x, SE.x);
+		randomgen.y = Random.Range (SW.y, NE.y);
 			
 		transform.position = randomgen;
 		currentpos = transform.position;
@@ -36,7 +36,7 @@ public class BallScript : MonoBehaviour {
 	
 	}
 
-	void SCORE() {
+	public void SCORE() {
 		Spawner.GetComponent<Spawner> ().resetball = true;
 		Destroy (gameObject);
 	}
