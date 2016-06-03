@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balls: {fileID: 129414, guid: ffc71dae0bee843b7b4ebb1ac4c0308e, type: 2}
+  resetball: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

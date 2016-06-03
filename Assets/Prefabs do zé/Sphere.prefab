@@ -12,8 +12,9 @@ GameObject:
   - 23: {fileID: 2385876}
   - 50: {fileID: 5082636}
   - 114: {fileID: 11418720}
+  - 58: {fileID: 5898428}
   m_Layer: 0
-  m_Name: Que Ganda Bola
+  m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.444439, y: 2.9817786, z: -6.4054003}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2608098, y: 0.26080972, z: 0.26080972}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,6 +82,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &5898428
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129414}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &11418720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,8 +109,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rng: 0
   gnr: 0
+  rngforme: 0
   randommax: 50
   randommin: 0
+  randomone: 1
+  randomneg: -1
   randomgen: {x: 0, y: 0}
   currentpos: {x: 0, y: 0}
 --- !u!1001 &100100000
