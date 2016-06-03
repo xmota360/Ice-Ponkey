@@ -4,11 +4,12 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 
 	public GameObject balls;
-	public bool resetball;
+
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		ResetBall ();
 	}
 	
 	// Update is called once per frame

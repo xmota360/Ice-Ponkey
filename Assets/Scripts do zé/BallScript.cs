@@ -37,11 +37,9 @@ public class BallScript : MonoBehaviour {
 	}
 
 	public void SCORE() {
-<<<<<<< HEAD
-		Spawner.GetComponent<Spawner> ().resetball = true;
-=======
+
 		Spawner.GetComponent<Spawner> ().ResetBall ();
->>>>>>> origin/master
+
 		Destroy (gameObject);
 	}
 }
