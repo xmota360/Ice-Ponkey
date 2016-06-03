@@ -13,10 +13,10 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (resetball == true) {
-			Instantiate (balls);
-			resetball = false;
+		
 		}
-	
+
+	public void ResetBall () {
+		Instantiate (balls);
 	}
 }
