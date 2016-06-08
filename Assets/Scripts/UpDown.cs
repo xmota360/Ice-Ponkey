@@ -19,6 +19,7 @@ public class UpDown : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		/*
 		if (Input.GetKey ("up"))
 
 			currentPos.y = transform.position.y + 1*stickVel;
@@ -39,6 +40,14 @@ public class UpDown : MonoBehaviour {
 		{
 			posLimit = new Vector3 (transform.position.x, limitDown, transform.position.z);
 			transform.position = posLimit;
+		}
+		*/
+
+		if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Moved) 
+		{
+			Vector2 touchDeltaPosition = Input.GetTouch (0).deltaPosition;
+
+			transform.Translate (0, -touchDeltaPosition.y * stickVel, 0);
 		}
 	}
 }
