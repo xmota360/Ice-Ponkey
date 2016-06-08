@@ -29,7 +29,7 @@ public class UpDown : MonoBehaviour {
 			currentPos.y = transform.position.y - 1*stickVel;
 
 		transform.position = currentPos;
-
+*/
 		if (transform.position.y > limitUp) 
 		{
 			posLimit = new Vector3 (transform.position.x, limitUp, transform.position.z);
@@ -41,13 +41,13 @@ public class UpDown : MonoBehaviour {
 			posLimit = new Vector3 (transform.position.x, limitDown, transform.position.z);
 			transform.position = posLimit;
 		}
-		*/
+
 
 		if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Moved) 
 		{
 			Vector2 touchDeltaPosition = Input.GetTouch (0).deltaPosition;
 
-			transform.Translate (0, -touchDeltaPosition.y * stickVel, 0);
+			transform.Translate (0, touchDeltaPosition.y * stickVel, 0);
 		}
 	}
 }
